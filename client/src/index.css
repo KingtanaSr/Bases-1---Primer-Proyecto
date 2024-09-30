@@ -1,0 +1,423 @@
+
+/* Estilo para el fondo de la página */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #03045e, #ade8f4); /* Degradado de fondo */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
+}
+
+
+
+
+code {
+  font-family: 'Courier New',
+    monospace;
+}
+
+
+
+/* Contenedor de toda la página */
+.app-container {
+  max-width: 1500px;
+  max-height: 5000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* Estilo de posición para el titulo de bhl humilde*/
+h1 {
+  text-align: center;
+  margin-top: 15px; 
+  position: relative;
+  top: -180px; 
+}
+
+
+/* Estilo para texto con degradado */
+.gradient-text {
+    font-style: oblique;
+    font-size: 50px;
+    background: linear-gradient(90deg, #9d4edd, #00b4d8); 
+    -webkit-background-clip: text; /* Recorta el fondo al texto */
+    -webkit-text-fill-color: transparent; /* Hace transparente el relleno del text */
+    background-clip: text; /* Recorta el fondo al texto */
+    color: #9d4edd; 
+    
+}
+
+
+
+/* Estilo de color para titulo de bhl humilde */
+.gradient-text2 {
+  font-style: oblique;
+  font-size: 150px;
+  background: linear-gradient(90deg, #3c096c, #9d4edd); 
+  -webkit-background-clip: text; /* Recorta el fondo al texto */
+  -webkit-text-fill-color: transparent; /* Hace transparente el relleno del text */
+  background-clip: text; /* Recorta el fondo al texto */
+  color: #9d4edd; 
+  
+}
+
+
+
+
+
+/* Estilo de espaciado para los botones  */
+.show-create-buttons {
+  margin-bottom: 20px; /* Espacio debajo de los botones */
+}
+
+
+
+/* Estilo de espaciado para los botones  */
+.show-create-buttons button {
+  margin-right: 1cm; /* Espacio de 1 centímetro entre los botones */
+}
+
+
+
+
+/* Estilo para los botones en general */
+button {
+  font-size: 18px; 
+  padding: 10px 20px; 
+  width: auto; 
+  height: auto; 
+  cursor: pointer;
+  border: 2px solid #9d4edd; 
+  background-color: #b8bedd; 
+  color: #03045e; 
+  border-radius: 15px;
+  transition: background-color 0.3s;
+  box-shadow: 0 5px 15px #a663cc;
+}
+
+
+/* Estilo para los botones al pasar el mouse por encima */
+button:hover, .button-search:hover{
+  background-color: #c8b6ff; 
+  transform: scale(1.20); 
+  transition: transform 0.5s; 
+}
+
+
+
+/* Estilo para los botones en el formulario de edición */
+.edit-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+/* Contenedor para los botones de publicaciones*/
+.publication-buttons {
+  display: flex; /* Contenedor flex para los botones */
+  gap: 8px; /* Espacio entre los botones */
+}
+
+
+
+
+/* Espaciado entre los botones de editar y eliminar en publicaciones*/
+.publication-buttons button {
+  margin-right: 8px; /* Espacio entre los botones */
+}
+
+
+
+
+/* Estilo para cada publicación */
+.publication-item {
+  margin-bottom: 15px; /* Espaciado entre publicaciones */
+  font-size: 14px;
+  line-height: 1; /* Espaciado entre líneas */
+  display: flex; 
+  justify-content: space-between; /* Espacio entre el texto y los botones */
+  align-items: center; /* Alinear verticalmente */
+  background-color: #0077b6; 
+  padding: 10px; 
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+
+
+
+/* Tabla de publicaciones por colección */
+.publications-by-collection table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+
+
+/*  Estilo para la tabla de publicaciones por colección  */
+.publications-by-collection th, .publications-by-collection td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+
+
+/* Estilo para la tabla de publicaciones por colección */
+.publications-by-collection th {
+  background-color: #b8bedd;
+}
+
+
+
+/* Estilo para la tabla de publicaciones por colección */
+.publications-by-collection tr:hover {
+  background-color: #b8bedd;
+}
+
+
+
+
+/* Estilo de posicion para la tabla de publicaciones por especie */
+.publications-by-species table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+
+
+/* Estilo de posicion y color de borde para la tabla de publicaciones por especie */
+.publications-by-species th, .publications-by-species td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+
+
+/* Estilo de color para la tabla de publicaciones por especie */
+.publications-by-species th {
+  background-color: #b8bedd;
+}
+
+
+
+/* Estilo de color para la tabla de publicaciones por especie */
+.publications-by-species tr:hover {
+  background-color: #b8bedd;
+}
+
+
+
+
+/* Estilo para cada colección */
+.collection-item {
+  background-color: #cdb4db;
+  padding: 15px;
+  margin-bottom: 20px; /* Espaciado entre elementos */
+  border-radius: 8px;  /* Bordes redondeados */
+}
+
+
+
+/* Estilo de posición para cada colección */
+.collection-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* Estilo de texto para cada colección */
+.collection-text {
+  font-size: 16px;
+  flex: 1;
+}
+
+
+
+
+/* Estilos para colecciones */
+.collections-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+
+
+/* Estilo para la tabla de publicaciones por coleccion*/
+.collection-publications table {
+  margin-top: 10px;
+}
+
+
+
+
+/* Estilo para los items de especies, instituciones y autores*/
+.species-item, .institutions-item, .authors-item{
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1;
+  justify-content: space-between; /* Espacio entre el texto y los botones */
+  align-items: center; /* Alinear verticalmente */
+  background-color: #89c2d9; /* Fondo semitransparente para mejorar legibilidad */
+  padding: 10px; /* Padding interno */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+
+
+
+
+/* Estilos para los formularios en general*/
+input[type="text"],
+input[type="date"] {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  background-color: #b8bedd;
+}
+
+
+
+
+
+/* Formulario de búsqueda para busqueda por especie*/
+.search-section {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+
+
+/* Estilo de posición para el formulario de búsqueda para busqueda por especie*/
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+
+/* Estilo de posición y color de borde para el formulario de búsqueda para busqueda por especie*/
+.search-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+
+/* Estilo de posición para los resultados del formulario de búsqueda para busqueda por especie*/
+.search-results {
+  margin-top: 20px;
+}
+
+
+
+/* Estilo para la tabla de los resultados del formulario de búsqueda para busqueda por especie*/
+.search-results table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  box-shadow: 0 5px 15px #a663cc;
+}
+
+
+
+
+/* Estilo para la tabla de los resultados del formulario de búsqueda para busqueda por especie*/
+.search-results th, .search-results td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+
+
+
+/* Estilo para la tabla de los resultados del formulario de búsqueda para busqueda por especie*/
+.search-results th {
+  background-color: #b8bedd;
+}
+
+
+
+
+/* Estilo para la tabla de los resultados del formulario de búsqueda para busqueda por especie*/
+.search-results tr:hover {
+  background-color: #89c2d9;
+}
+
+
+
+
+
+
+/* Intento de Responsive Design */
+@media (max-width: 768px) {
+  .species-details {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+
+  .button-publications, .collection-text, .button-collection {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+
+
+  .publications-by-species table, .publications-by-species th, .publications-by-species td {
+      font-size: 14px;
+  }
+
+
+
+  .search-form {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+
+
+  .search-input {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+
+
+  .button-search {
+      width: 100%;
+  }
+
+
+
+  .search-results table, .collection-publications table {
+    font-size: 14px;
+  }
+
+
+}

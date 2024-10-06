@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Select from 'react-select'
 
-import './index.css'; // Asegúrate de importar tu archivo CSS
+import './index.css'; // Importar archivo CSS
 
 const App = () => {
     // Estados para las publicaciones, mostrar publicaciones, crear publicaciones
@@ -393,7 +393,7 @@ const App = () => {
     // Todo lo que compone la app
     return (
         <div className="app-container">
-            <h1 className="gradient-text2">HUMBLE BHL</h1>
+            <h1 className="normal-text">👽 HUMBLE BHL 🤓</h1>
             
             {/* Botones para mostrar publicaciones, crear nueva publicación, especies, instituciones, autores y colecciones, etc */}
             <div className="show-create-buttons">
@@ -458,7 +458,7 @@ const App = () => {
 
             {/* Campo de búsqueda para publicaciones por especie */}
             <div className="search-section">
-                <h2 className="gradient-text">Search publications by species</h2>
+                <h2 className="gradient-text">Search publications by species </h2>
                 <form onSubmit={handleSearch} className="search-form">
                     <input
                         type="text"
